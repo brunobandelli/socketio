@@ -1,0 +1,24 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "description": "Learning Socketio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunobandelli/socketio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunobandelli/socketio/issues"
+  },
+  "homepage": "https://github.com/brunobandelli/socketio#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}
