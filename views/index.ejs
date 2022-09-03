@@ -19,6 +19,12 @@
 </script>
 <script>
     var socket = io("http://localhost:3000");
+
+    socket.on("disconnect",() => {
+        console.log("Desconectado");
+    })
+
+
     socket.emit("boasvindas", {nome: "Bruno Bandelli"});
 
     socket.on("resultado", (data) => {
