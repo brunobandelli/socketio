@@ -11,15 +11,9 @@ io.on("connection",(socket) => {
         console.log("X desconectou: " + socket.id);
     })
 
-    socket.on("boasvindas", (data) => {
-        console.log("EXECUTANDO EVENTO DE BOAS VINDAS")
+    socket.on("msg", (data) => {
+        io.emit("showmsg", data);
         console.log(data)
-    })
-
-    socket.on("palavra", (data) => {
-        console.log(data);
-        socket.emit("resultado", data + ' - GUIA DO PROGRAMADOR!');
-        //console.log(data);
     })
 })
 
